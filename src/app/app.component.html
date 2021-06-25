@@ -1,8 +1,12 @@
 <app-menu></app-menu>
 <div>
+    <span>True: {{aBoolean | bool}}</span>
+    <span> | False: {{!aBoolean | bool: locale}}</span>
+</div>
+<div>
     <input [(ngModel)]="name" type="text">
     <button (click)="copyName()">Copy</button>
-    <label>{{copiedName}}</label>
+    <label>{{copiedName | toUpper}}</label>
 </div>
 <div>
     <input [disabled]= "statusDisabled" type="text" id="requestStatus" value="NEW">

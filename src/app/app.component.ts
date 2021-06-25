@@ -12,6 +12,8 @@ export class AppComponent {
 
 name: string = "";
 copiedName: string = "";
+aBoolean: boolean = true;
+locale: string = "fr";
 
 copyName(): void
 {
